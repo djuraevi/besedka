@@ -1,0 +1,30 @@
+@import url(/fonts.css);
+@import url(/normalize.css);
+
+body {
+    font-family: "GT Eesti Pro Display";
+}
+
+
+.buttons {
+    font-family: GT Eesti Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.buttons:hover {
+    font-family: GT Eesti Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #020307;
+}
