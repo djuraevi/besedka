@@ -3,28 +3,177 @@
 
 body {
     font-family: "GT Eesti Pro Display";
+    background-color: #1B1B1B;
 }
 
+.text {
+    font: normal 300 24px/28px "GT Eesti Pro Display";
+    color: #FFFFFF;
+}
 
-.buttons {
-    font-family: GT Eesti Pro Display;
-    font-style: normal;
+.caption{
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 23px;
+    color: #AAAAAA;
+}
+
+.caption-light{
+    font-weight: 300;
+}
+
+.btn {
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    display: flex;
-    align-items: center;
+    background-color: #1B1B1B;
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
 }
 
-.buttons:hover {
-    font-family: GT Eesti Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #020307;
+}
+
+.email{
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+}
+
+.email:hover{
+    text-decoration-line: underline;
+    color: #7F7F7F;
+}
+
+.circle{
     display: flex;
     align-items: center;
-    color: #020307;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.circle-behance:hover {
+    background: #1769FF;
+}
+
+.circle-instagram:hover{
+    background: #A3389B;
+}
+
+.main__btn{
+    width: 200px;
+    height: 53px;
+}
+
+.links{
+    display: flex;
+}
+
+.language__btn{
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 23px;
+    border: none;
+}
+
+.language__btn:hover{
+    background-color: #1B1B1B;
+    color: #AAAAAA;
+    text-decoration-line: underline;
+
+}
+
+.about__title{
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #AAAAAA;
+}
+
+.about__scroll{
+    font-size: 14px;
+    line-height: 16px;
+    color: #AAAAAA;
+    transform: rotate(-90deg);
+}
+
+.about__border{
+    width: 113px;
+    height: 1px;
+    background: #AAAAAA;
+    transform: rotate(-90deg);
+}
+
+.about__text{
+    font-weight: 350;
+    font-size: 50px;
+    line-height: 58px;
+}
+
+.about__title{
+    background-image: url(/img/Group\ 772.png);
+}
+
+.title{
+    font-size: 200px;
+    line-height: 232px;
+}
+
+.bold{
+    font-weight: normal;
+}
+
+
+.count__text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.card__text{
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.card__text-post{
+    font-weight: 350;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.card__text-country{
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 28px;
+    opacity: 0.5;
+}
+
+.wrap__btn{
+    width: 225px;
+    height: 53px;
+}
+
+.work-community__text{
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.work-community__btn{
+    width: 154px;
+    height: 53px; 
+}
+
+.footer__text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
 }
