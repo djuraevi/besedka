@@ -10,99 +10,136 @@
 <body>
     <section class="main">
         <header class="header">
-            <a class="text email" href="mailto:info@besedka.community.net">info@besedka.community.net</a>
+            <a class="header__email text" href="mailto:info@besedka.community.net">info@besedka.community.net</a>
         </header>
-        <img src="/img/Group 775.png" alt="logo-name">
-        <p class="main__text text ru">Если ты крутишься в сфере дизайна, вступай к нам в сообщество.Тут ты сможешь обмениваться опытом </p>
+        <img class="main__img" src="img/logo-name.png" alt="logo-name">
+        <p class="main__text text">Если ты крутишься в сфере дизайна, вступай к нам в сообщество.<br/>Тут ты сможешь обмениваться опытом </p>
         <button class="main__btn text btn">Вступить</button>
-        <div class="links">
-            <div class="circle circle-behance">
-                <a href="#" class="link">
-                    <img class="img" src="/img/behance.png" alt="behaince">
-                </a>
-            </div>
-            <div class="circle circle-instagram">
-                <a href="#" class="link">
-                    <img class="img" src="/img/ant-design_instagram-filled.png" alt="instagram">
-                </a>
-            </div>
+        <div class="row">
+            <div class="social">
+                <div class="circle circle-behance">
+                    <a href="#" class="link">
+                        <img class="img" src="img/behance.png" alt="behaince">
+                    </a>
+                </div>
+                <div class="circle circle-instagram">
+                    <a href="#" class="link">
+                        <img class="img" src="img/instagram.png" alt="instagram">
+                    </a>
+                </div>
             </div>      
-        <div class="language">
-            <button class="language__btn btn text">en</button>
-            <button class="language__btn btn text">ru</button>
+            <div class="language">
+                <button class="language__btn btn text">en</button>
+                <button class="language__btn btn text">ru</button>
+            </div>
         </div>
+        
     </section>
     <section class="about">
-        <p class="caption text">/ О нас</p>
-        <p class="about__scroll text">скроль <span class="about__border"></span> </p>
-        <p class="about__text text">В нашем сообществе состоят как опытные,
-            так и начинающие специалисты
-            в сфере дизайна и технического направления</p>
-        <img src="img/Vector 2.png" alt="star">
+        <div class="about__box">
+            <p class="caption text">/ О нас</p>
+            <div class="about__col">
+                <span class="about__border"> </span>
+                <p class="about__scroll text">  скроль</p>
+            </div>
+            
+        </div>
+        <div class="about__holder">
+            <p class="about__text text">В нашем сообществе состоят как опытные,<br>
+                так и начинающие специалисты <br>
+                в сфере дизайна и технического направления</p>
+            <img src="img/star.png" alt="star">
+        </div>       
             <div class="about__title">
-                <h1 class="title text"> <span class="bold">HELLO,</span>  WE ARE </h1>
-                <h1 class="title text"> <span class="bold">A COMMUNITY</span> </h1>
-                <h1 class="title text">OF LIKE <span class="bold">THOUGHT</span> </h1>
+                <h1 class="title text"> <span class="title__bold">HELLO,</span>  WE ARE </h1>
+                <h1 class="title text"> <span class="title__bold">A COMMUNITY</span> </h1>
+                <h1 class="title text">OF LIKE<span class="title__bold">THOUGHT</span> </h1>
             </div>
     </section>
     <section class="people">
-        <p class="caption text">/ Люди сообщества</p>
-        <div class="nav">
-            <img src="/img/Group 745.png" alt="arrow">
-            <img src="/img/Group 744.png" alt="arrow">
+        <div class="people__wrapper">
+            <p class="caption text">/ Люди сообщества</p>
+        <div class="people__nav">
+            <img class="nav__img" src="img/arrow_left.png" alt="arrow">
+            <img src="img/arrow_right.png" alt="arrow">
         </div>
-        <div class="count">
+        <div class="people__count">
             <p class="count__text text">03</p>
             <p class="count__text text">/</p>
             <p class="count__text text">20</p>
         </div>
-        <div class="card">
-            <img src="img/Rectangle 182.png" alt="photo" class="card__img">
-            <p class="card__text text">Владимир</p>
-            <img src="img/behance.png" alt="behaince">
-            <img src="img/ant-design_instagram-filled.png" alt="instagram">
-            <span></span>
-            <p class="card__text card__text-post text">Web designer
+        </div> 
+        <div class="people__card">
+            <img src="img/photo-vladimir.png" alt="photo" class="card__img">
+            <div class="people__name">
+                <p class="card__text text">Владимир</p>
+                <div class="social">
+                <div class="circle circle-behance">
+                    <a href="#" class="link">
+                        <img class="img" src="img/behance.png" alt="behaince">
+                    </a>
+                </div>
+                <div class="circle circle-instagram">
+                    <a href="#" class="link">
+                        <img class="img" src="img/instagram.png" alt="instagram">
+                    </a>
+                </div>
+                </div> 
+            </div>
+            <div class="card__border"></div>
+            <p class="card__text card__text-post text">Web designer <br>
                 Основатель сообщества</p>
             <p class="card__text card__text-country text">г. Москва</p>
         </div>
     </section>
     <section class="to-share">
         <p class="caption caption-light text">/ хочу поделиться</p>
-        <div class="card">
+        <div class="to-share__card">
             <div class="card-people">
-                <img src="img/Rectangle 211.png" alt="photo">
-                <p class="text ">Создатель:</p>
-                <p class="text">Филипп</p>
-                <p class="text">О работе:</p>
-                <p class="text">3D анимашка, как отражения
-                    меня. Пришла в голову идея
-                    визуализировать свой 
+                <img src="img/photo-philip.png" alt="photo">
+                <p class="text text-creator">Создатель:</p>
+                <p class="text text-creator__name">Филипп</p>
+                <p class="text text-about">О работе:</p>
+                <p class="text text-about__work">3D анимашка, как отражения <br>
+                    меня. Пришла в голову идея <br>
+                    визуализировать свой <br>
                     психологический портрет</p>
             </div>
             <div class="card-work">
-                <img src="/img/Rectangle 209.png" alt="work">
+                <img src="img/work-philip.png" alt="work">
             </div>
+            <img src="img/arrow-share.png" alt="arrow">
         </div>
-        <img src="/img/Group 786.png" alt="arrow">
+
     </section>
     <section class="work-community">
         <p class="caption caption-light text">/ работы участников сообщества</p>
         <div class="wrap">
             <div class="items">
                 <div class="list">
-                    <img src="img/Rectangle 212.png" alt="work">
-                    <img src="img/behance.png" alt="behaince">
-                    <img src="img/Ellipse 13.png" alt="photo">
-                    <p class="text">Website Concept</p>
-                    <p class="text">вЛАДИМИР ГРЕБЕНЮК</p>
+                    <div class="list-work">
+                        <img src="img/work-vladimir.png" alt="work">
+                        <img src="img/behance.png" alt="behaince">
+                    </div>
+                    <div class="creator-box">
+                        <div class="creator-img">
+                            <img src="img/elips-vladimir.png" alt="photo">
+                        </div>
+                        <div class="list-creator">
+                            <p class="text text-concept">Website Concept</p>
+                            <p class="text text-creator-name">Владимир Гребенюк</p>
+                        </div>
+                    </div>  
                 </div>
             </div>
-            <button class="wrap__btn btn">Посмотреть еще</button>
+            <div class="box-btn-center">
+                <button class="wrap__btn btn">Посмотреть еще</button>
+            </div>
         </div>
-        
-        <p class="work-community__text text">Хотите устроить тусовку?</p>
-        <button class="work-community__btn btn">Хочу!</button>
+        <div class="box-work">
+            <p class="work-community__text text">Хотите устроить тусовку?</p>
+            <button class="work-community__btn btn">Хочу!</button>
+        </div>  
     </section>
     <footer class="footer">
         <p class="footer__text text">&copy;2022 besedka.community All Rights Reserved</p>
