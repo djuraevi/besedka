@@ -1,5 +1,5 @@
 @import url(/fonts.css);
-/* @import url(/normalize.css); */
+@import url(/normalize.css);
 
 *,
 *::before,
@@ -13,7 +13,8 @@
 body {
     font-family: "GT Eesti Pro Display";
     background-color: #1B1B1B;
-    width: 1922px;
+    width: 100%;
+    max-width: 1922px;
     margin: 0 auto;
 }
 
@@ -71,6 +72,7 @@ body {
 
 .main__img{
    padding-top: 105px; 
+   max-width: 1574px;
 }
 
 .main__text{
@@ -201,6 +203,16 @@ body {
     padding-right: 93px;
 }
 
+.nav__inner{
+    position: relative;
+}
+
+.inside-arrow{
+    position: absolute;
+    top: 66.5px;
+    left: 57.5px;
+}
+
 .people__count{
     display: flex;
     align-items: center;
@@ -212,8 +224,19 @@ body {
     line-height: 23px;
 }
 
+.people-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+    padding-left: 400px;
+}
+
 .people__card{
     width: 329px;
+}
+
+.people__card:nth-child(even){
+    padding-top: 89px;
 }
 
 .people__name{
@@ -223,7 +246,7 @@ body {
 }
 
 .card__text{
-    padding-top: 43px;
+    padding-top: 25px;
     font-weight: normal;
     font-size: 38px;
     line-height: 44px;
@@ -306,8 +329,27 @@ body {
     padding: 100px 0 250px 0;
 }
 
+.items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 34px;
+    row-gap: 60px;
+}
+
+
 .list{
     width: 500px;
+}
+
+.list-work{
+    position: relative;
+}
+
+.list-behance{
+    position: absolute;
+    bottom: 5px;
+    left: 478px;
 }
 
 .creator-box{
@@ -335,6 +377,7 @@ body {
 }
 
 .box-btn-center{
+    padding-top: 100px;
     padding-left: 671px;
 }
 
@@ -373,4 +416,50 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
+}
+
+
+.rotate-center {
+	-webkit-animation: rotate-center 15s ease-in-out infinite both;
+	        animation: rotate-center 15s ease-in-out infinite both;
+}
+
+ @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+
+@media (max-width: 1600px)){
+    body {
+        max-width: 1600px;
+    }
+    .main__img{
+        max-width: 1181px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        max-width: 375px;
+    }
+    .main__img{
+        max-width: 335px;
+    }
 }
