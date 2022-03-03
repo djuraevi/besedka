@@ -1,5 +1,5 @@
-@import url(/fonts.css);
-@import url(/normalize.css);
+@import url(fonts.css);
+/* @import url(normalize.css); */
 
 *,
 *::before,
@@ -72,20 +72,20 @@ body {
 
 .main__img{
    padding-top: 105px; 
-   max-width: 1574px;
+   max-width: 100%;
 }
 
 .main__text{
     padding: 40px 0 40px 2px;
-    width: 716px;
+    font-weight: 350;
 }
 
 .main__btn{
-    width: 200px;
+    width: 197px;
     height: 53px;
 }
 
-.row{
+.main__social{
     padding-top: 134px;
     display: flex;
     justify-content: space-between;
@@ -128,7 +128,7 @@ body {
 }
 
 .about{
-    margin-top: 230px;
+    margin-top: 235px;
     padding: 0 60px 0 115px;
 }
 
@@ -138,10 +138,10 @@ body {
     justify-content: space-between;
 }
 
-.about__col{
+.about__rotate{
     display: flex;
     align-items: center;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateY(90px);
 }
 
 .about__scroll{
@@ -171,7 +171,8 @@ body {
 }
 
 .about__title{
-    background: url(img/three-pictures.png) no-repeat top center;
+    background: url(img/three-pictures.png) no-repeat 50% 13%;
+    background-size: 60%;
 }
 
 .title{
@@ -179,9 +180,15 @@ body {
     font-size: 200px;
     line-height: 232px;
 }
+.title:first-child{
+    padding: 121px 0 100px 112px;
+}
+.title:nth-child(2n){
+    padding: 0 0 77px 331px;
+}
 
 .title__bold{
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .people{
@@ -451,15 +458,39 @@ body {
         max-width: 1600px;
     }
     .main__img{
-        max-width: 1181px;
+        padding-top: 90px;
     }
+    .main__social{
+        padding-top: 80px;
+    }
+    .about{
+        margin-top: 274px;
+        padding: 0 60px 0 91px;
+    }
+    .about__box{
+        padding-left: 9px;
+    }
+    .about__holder{
+        padding: 0 106px 160px 9px;
+    }
+    .about__text{
+        padding-top: 102px;
+        font-weight: 350;
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .about__star{
+        width: 170.95px;
+        height: 178px;
+    }
+
 }
 
 @media (max-width: 375px) {
     body {
         max-width: 375px;
     }
-    .main__img{
+    /* .main__img{
         max-width: 335px;
-    }
+    } */
 }
