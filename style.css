@@ -188,7 +188,7 @@ body {
 }
 
 .title__bold{
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .people{
@@ -198,7 +198,8 @@ body {
 .people__wrapper{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 99px;
+    align-items: center;
+    padding-bottom: 99px;
 }
 
 .people__nav{
@@ -207,7 +208,7 @@ body {
 }
 
 .nav__img{
-    padding-right: 93px;
+    padding-right: 70px;
 }
 
 .nav__inner{
@@ -283,7 +284,10 @@ body {
 }
 
 .to-share{
-    padding: 0 63px 200px 176px;
+    padding: 0 60px 200px 63px;
+}
+.to-share__caption{
+    padding-left: 120px;
 }
 
 .to-share__card{
@@ -346,7 +350,7 @@ body {
 
 
 .list{
-    width: 500px;
+    max-width: 500px;
 }
 
 .list-work{
@@ -385,7 +389,8 @@ body {
 
 .box-btn-center{
     padding-top: 100px;
-    padding-left: 671px;
+    display: flex;
+    justify-content: center;
 }
 
 .wrap__btn{
@@ -420,7 +425,7 @@ body {
 }
 
 .footer__text{
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
 }
@@ -453,7 +458,7 @@ body {
   }
   
 
-@media (max-width: 1600px)){
+@media (max-width: 1600px) {
     body {
         max-width: 1600px;
     }
@@ -484,6 +489,112 @@ body {
         height: 178px;
     }
 
+    .title {
+        font-size: 160px;
+        line-height: 186px;
+    }
+    .title:first-child{
+        padding: 134px 0 128px 112px;
+    }
+    .title:nth-child(2n){
+        padding: 0 0 126px 331px;
+    }
+    
+    .title__bold{
+        font-weight: 400;
+    }
+
+    .people{
+    padding: 160px 60px 160px 100px;
+    }
+
+    .people__wrapper{
+    padding-bottom: 51px;
+    }
+   
+    .people-row{
+        gap: 100px;
+        padding-left: 250px;
+    }
+    .to-share__caption{
+        padding-left: 74px;
+    }
+    .to-share{
+        padding: 0 25px 160px 26px;
+    }    
+    .to-share__card{
+        padding-top: 120px;
+    }
+    .card-people{
+        padding: 0 80px 0 40px;
+    }
+    .card-people__img{
+        width: 255px;
+    }
+    .text-creator{
+        padding-top: 39px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .text-creator__name{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .text-about{
+        padding-top: 24px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .text-about__work{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .card-work__img{
+        width: 1014px;s
+    }
+    .card-work{
+        padding-right: 25px;
+    }
+    
+    .work-community{
+        padding: 0 60px;
+    }
+    .work-community-caption{
+        padding-left: 40px;
+    }
+    
+    .wrap{
+        padding: 120px 0 202px 0;
+    }
+    .items{
+        column-gap: 97px;
+    }
+    .list-work__img{
+        width: 429px;
+    }
+    .list-behance{
+        left: 408px;
+    }
+    .creator-box{
+        padding-top: 30px;
+    }    
+    .text-concept{
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 5px;
+    }
+    .text-creator-name{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    .box-btn-center{
+        padding-top: 82px;
+    }    
+    .footer{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
 }
 
 @media (max-width: 375px) {
