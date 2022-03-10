@@ -12,9 +12,11 @@
         <header class="header">
             <a class="header__email text" href="mailto:info@besedka.community.net">info@besedka.community.net</a>
         </header>   
-        <img class="main__img" src="img/logo-name.png" alt="logo-name">
-        <p class="main__text text">Если ты крутишься в сфере дизайна, вступай к нам в сообщество.<br/>Тут ты сможешь обмениваться опытом </p>
-        <button class="main__btn text btn">Вступить</button>
+        <div class="header__info">
+            <img class="main__img" src="img/logo-name.png" alt="logo-name">
+            <p class="main__text text">Если ты крутишься в сфере дизайна, вступай к нам в сообщество.<br/>Тут ты сможешь обмениваться опытом </p>
+            <button class="main__btn text btn">Вступить</button>
+        </div>
         <div class="main__social">
             <div class="social">
                 <div class="circle circle-behance">
@@ -51,16 +53,18 @@
             <img class="about__star" src="img/star.png" alt="star">
         </div>       
             <div class="about__title">
-                <h1 class="title text"> <span class="title__bold">HELLO,</span>  WE ARE </h1>
-                <h1 class="title text"> <span class="title__bold">A COMMUNITY</span> </h1>
-                <h1 class="title text">OF LIKE<span class="title__bold">THOUGHT</span> </h1>
+                <h1 class="title__bold title text">HELLO,</h1>
+                <h1 class="title text">  WE ARE </h1>
+                <h1 class="title title__bold text"> A COMMUNITY</h1>
+                <h1 class="title text">OF LIKE </h1>
+                <h1 class="title__bold title text">THOUGHT</h1>
             </div>
     </section>
     <section class="people">
         <div class="people__wrapper">
             <p class="caption text">/ Люди сообщества</p>
         <div class="people__nav">
-            <img class="nav__img" src="img/arrow_left.png" alt="arrow">
+            <img class="nav__img arrow-left__img" src="img/arrow_left.png" alt="arrow">
             <div class="nav__inner">
                 <div class="rotate-circle">
                     <img class="rotate-center" src="img/circle-scroll.svg" alt="">
@@ -148,23 +152,31 @@
     <section class="to-share">
         <p class="to-share__caption caption caption-light text">/ хочу поделиться</p>
         <div class="to-share__card">
-            <img src="img/arrow-shareLeft.png" alt="arrow">
+            <img class="to-share__arrow full-screen" src="img/arrow-shareLeft.png" alt="arrow">
+            <img class="card-people__img mobile__version" src="img/photo-philip.png" alt="photo">
+            <div class="card-block__mobile mobile__version">
+                <p class="text text-creator mobile__version">Создатель:</p>
+                <p class="text text-creator__name mobile__version">Филипп</p>
+            </div>
+            <div class="card-block__arrow mobile__version">
+                <img class="to-share__arrow mobile__version" src="img/arrow-shareLeft.png" alt="arrow">
+                <img class="to-share__arrow mobile__version" src="img/arrow-shareRight.png" alt="arrow">
+            </div>
             <div class="card-people">
-                <img class="card-people__img" src="img/photo-philip.png" alt="photo">
-                <p class="text text-creator">Создатель:</p>
-                <p class="text text-creator__name">Филипп</p>
+                <img class="card-people__img full-screen" src="img/photo-philip.png" alt="photo">
+                <p class="text text-creator full-screen">Создатель:</p>
+                <p class="text text-creator__name full-screen">Филипп</p>
                 <p class="text text-about">О работе:</p>
-                <p class="text text-about__work">3D анимашка, как отражения <br>
-                    меня. Пришла в голову идея <br>
-                    визуализировать свой <br>
+                <p class="text text-about__work">3D анимашка, как отражения 
+                    меня. Пришла в голову идея 
+                    визуализировать свой 
                     психологический портрет</p>
             </div>
             <div class="card-work">
                 <img class="card-work__img" src="img/work-philip.png" alt="work">
             </div>
-            <img src="img/arrow-shareRight.png" alt="arrow">
+            <img class="to-share__arrow full-screen" src="img/arrow-shareRight.png" alt="arrow">
         </div>
-
     </section>
     <section class="work-community">
         <p class="work-community-caption caption caption-light text">/ работы участников сообщества</p>

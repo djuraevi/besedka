@@ -14,14 +14,14 @@
 }
 @font-face {
     font-family: "GT Eesti Pro Display";
-    font-style: medium;
+    font-style: normal;
     font-weight: 500;
     src: url("fonts/GTEestiProText-Medium.woff2") format("woff2");
     src: url("fonts/GTEestiProText-Medium.woff") format("woff");
 }
 @font-face {
     font-family: "GT Eesti Pro Display";
-    font-style: thin;
+    font-style: normal;
     font-weight: 500;
     src: url("fonts/GTEestiProDisplay-Thin.woff2") format("woff2");
     src: url("fonts/GTEestiProDisplay-Thin.woff") format("woff");
