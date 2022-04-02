@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Besedka unity</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <!-- <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
 </head>
 <body>
     <section class="main">
         <header class="header">
-            <a class="header__email text" href="mailto:info@besedka.community.net">info@besedka.community.net</a>
+            <a class="header__email text _anim-items _anim-no-hide" href="mailto:info@besedka.community.net">info@besedka.community.net</a>
         </header>   
-        <div class="header__info">
-            <img class="main__img" src="img/logo-name.png" alt="logo-name">
-            <p class="main__text text">Если ты крутишься в сфере дизайна, вступай к нам в сообщество.<br/>Тут ты сможешь обмениваться опытом </p>
-            <button class="main__btn text btn">Вступить</button>
+        <div class="main__info">
+            <div class="main__logo-container">
+                <div class="main__logo-amimation">
+                    <video autoplay loop muted>
+                        <source src="img/gradient_background.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                      </video>
+                      <h1 class="main__logo">Besedka <br> Community</h1>
+                </div>
+            </div>      
+            <p class="main__text text _anim-items _anim-no-hide">Если ты крутишься в сфере дизайна, вступай к нам в сообщество.<br/>Тут ты сможешь обмениваться опытом </p>
+            <button class="main__btn text btn _anim-items _anim-no-hide">Вступить</button>
         </div>
-        <div class="main__social">
+        <div class="main__social _anim-items _anim-no-hide">
             <div class="social">
                 <div class="circle circle-behance">
                     <a href="#" class="link">
@@ -35,42 +44,43 @@
                 <button class="language__btn btn text">ru</button>
             </div>
         </div>
-        
     </section>
+
     <section class="about">
         <div class="about__box">
-            <p class="caption text">/ О нас</p>
-            <div class="about__rotate">
-                <span class="about__border"> </span>
-                <p class="about__scroll text">  скроль</p>
-            </div>
-            
+            <p class="about__caption caption text _anim-items _anim-no-hide">/ О нас</p>  
         </div>
         <div class="about__holder">
-            <p class="about__text text">В нашем сообществе состоят как опытные,<br>
+            <p class="about__text text _anim-items _anim-no-hide">В нашем сообществе состоят как опытные,<br>
                 так и начинающие специалисты <br>
                 в сфере дизайна и технического направления</p>
             <img class="about__star" src="img/star.png" alt="star">
         </div>       
             <div class="about__title">
-                <h1 class="title__bold title text">HELLO,</h1>
-                <h1 class="title text">  WE ARE </h1>
-                <h1 class="title title__bold text"> A COMMUNITY</h1>
-                <h1 class="title text">OF LIKE </h1>
-                <h1 class="title__bold title text">THOUGHT</h1>
+                <div class="square-container">
+                        <img src="img/first-square.png" alt="square" class="square-img first-square _anim-items _anim-no-hide">
+                        <img src="img/second-square.png" alt="square" class="square-img second-square _anim-items _anim-no-hide">
+                        <img src="img/third-square.png" alt="square" class="square-img third-square _anim-items _anim-no-hide">
+                </div>
+                <h1 class="title-one title__bold title text _anim-items _anim-no-hide">HELLO,&nbsp;</h1>
+                <h1 class="title-two title text _anim-items _anim-no-hide">WE ARE</h1>
+                <h1 class="title-three title title__bold text _anim-items _anim-no-hide">A COMMUNITY</h1>
+                <h1 class="title-four title text _anim-items _anim-no-hide">OF LIKE&nbsp;</h1>
+                <h1 class="title-five title__bold title text _anim-items _anim-no-hide">THOUGHT</h1>
             </div>
     </section>
+
     <section class="people">
         <div class="people__wrapper">
             <p class="caption text">/ Люди сообщества</p>
         <div class="people__nav">
-            <img class="nav__img arrow-left__img" src="img/arrow_left.png" alt="arrow">
+            <img class="nav__img swiper-button-prev arrow-left__img" src="img/arrow_left.png" alt="arrow">
             <div class="nav__inner">
                 <div class="rotate-circle">
                     <img class="rotate-center" src="img/circle-scroll.svg" alt="">
                 </div>
                 <div class="inside-arrow">
-                    <img class="nav__img" src="img/arrow_right.png" alt="arrow">
+                    <img class="nav__img swiper-button-next" src="img/arrow_right.png" alt="arrow">
                 </div>
             </div>
             </div>
@@ -148,9 +158,89 @@
                 <p class="card__text card__text-country text">г. Ташкент</p>
             </div>
         </div>
-    </section>
+        <div class="swiper-continer">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="people__card">
+                        <img src="img/photo-vladimir.png" alt="photo" class="card__img">
+                        <div class="people__name">
+                            <p class="card__text text">Владимир</p>
+                            <div class="social">
+                            <div class="circle circle-behance">
+                                <a href="#" class="link">
+                                    <img class="img" src="img/behance.png" alt="behaince">
+                                </a>
+                            </div>
+                            <div class="circle circle-instagram">
+                                <a href="#" class="link">
+                                    <img class="img" src="img/instagram.png" alt="instagram">
+                                </a>
+                            </div>
+                            </div> 
+                        </div>
+                        <div class="card__border"></div>
+                        <p class="card__text card__text-post text">Web designer <br>
+                            Основатель сообщества</p>
+                        <p class="card__text card__text-country text">г. Москва</p>
+                </div>
+            </div>
+            <div class="swiper-slide ">
+                <div class="people__card">
+                    <img src="img/photo-vadim.png" alt="photo" class="card__img">
+                <div class="people__name">
+                <p class="card__text text">Вадим</p>
+                <div class="social">
+                <div class="circle circle-behance">
+                    <a href="#" class="link">
+                        <img class="img" src="img/behance.png" alt="behaince">
+                    </a>
+                </div>
+                <div class="circle circle-instagram">
+                    <a href="#" class="link">
+                        <img class="img" src="img/instagram.png" alt="instagram">
+                    </a>
+                </div>
+                </div> 
+            </div>
+            <div class="card__border"></div>
+            <p class="card__text card__text-post text">Web designer <br>
+                Основатель сообщества</p>
+            <p class="card__text card__text-country text">г. Ташкент</p>
+                </div>
+                
+            </div>
+            <div class="swiper-slide">
+                <div class="people__card">
+                    <img src="img/photo-slava.png" alt="photo" class="card__img">
+            <div class="people__name">
+                <p class="card__text text">Вячеслав</p>
+                <div class="social">
+                <div class="circle circle-behance">
+                    <a href="#" class="link">
+                        <img class="img" src="img/behance.png" alt="behaince">
+                    </a>
+                </div>
+                <div class="circle circle-instagram">
+                    <a href="#" class="link">
+                        <img class="img" src="img/instagram.png" alt="instagram">
+                    </a>
+                </div>
+                </div> 
+            </div>
+            <div class="card__border"></div>
+            <p class="card__text card__text-post text">Main designer <br>
+                Основатель сообщества</p>
+            <p class="card__text card__text-country text">г. Ташкент</p>
+                </div>
+                
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section> 
+
     <section class="to-share">
-        <p class="to-share__caption caption caption-light text">/ хочу поделиться</p>
+        <p class="to-share__caption caption text">/ хочу поделиться</p>
         <div class="to-share__card">
             <img class="to-share__arrow full-screen" src="img/arrow-shareLeft.png" alt="arrow">
             <img class="card-people__img mobile__version" src="img/photo-philip.png" alt="photo">
@@ -178,8 +268,9 @@
             <img class="to-share__arrow full-screen" src="img/arrow-shareRight.png" alt="arrow">
         </div>
     </section>
+
     <section class="work-community">
-        <p class="work-community-caption caption caption-light text">/ работы участников сообщества</p>
+        <p class="work-community-caption caption text">/ работы участников сообщества</p>
         <div class="wrap">
             <div class="items">
                 <div class="list">
@@ -282,10 +373,12 @@
             <button class="work-community__btn btn">Хочу!</button>
         </div>  
     </section>
+    
     <footer class="footer">
         <p class="footer__text text">&copy;2022 besedka.community All Rights Reserved</p>
     </footer>
 
     <script src="index.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

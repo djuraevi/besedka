@@ -26,3 +26,11 @@
     src: url("fonts/GTEestiProDisplay-Thin.woff2") format("woff2");
     src: url("fonts/GTEestiProDisplay-Thin.woff") format("woff");
 }
+
+@font-face {
+    font-family: "Druk Wide Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("fonts/Druk\ Wide\ Medium.woff2") format("woff2");
+    src: url("fonts/Druk\ Wide\ Medium.woff") format("woff");
+}

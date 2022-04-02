@@ -9,7 +9,6 @@
   border: 0;
   box-sizing: border-box;
 }
-
 body {
     font-family: "GT Eesti Pro Display";
     background-color: #1B1B1B;
@@ -17,23 +16,16 @@ body {
     max-width: 1922px;
     margin: 0 auto;
 }
-
 .text {
     font: normal 300 24px/28px "GT Eesti Pro Display";
     color: #FFFFFF;
 }
-
 .caption{
     font-weight: 350;
     font-size: 20px;
     line-height: 23px;
     color: #AAAAAA;
 }
-
-.caption-light{
-    font-weight: 300;
-}
-
 .btn {
     font-weight: normal;
     font-size: 18px;
@@ -42,11 +34,11 @@ body {
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
 }
-
 .btn:hover {
     background-color: #FFFFFF;
     color: #020307;
 }
+
 
 .main{
     padding: 0 60px 0 60px;
@@ -63,6 +55,15 @@ body {
     font-size: 20px;
     line-height: 23px;
     text-decoration: none;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.header__email._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .header__email:hover{
@@ -70,19 +71,81 @@ body {
     color: #7F7F7F;
 }
 
-.main__img{
-   padding-top: 105px; 
-   max-width: 100%;
+.main__info{
+    padding-top: 105px;
+}
+
+.main__logo-container{
+    position: relative;
+    width: 1600px;
+    height: 415px;
+}
+
+.main__logo-animation{
+    position: absolute;
+    width: 1600px;
+    height: 415px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.main__logo-animation video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1B1B1B;
+    text-align: start;
+    line-height: 100%;
+    mix-blend-mode: darken;
+}
+
+.main__logo{
+    font: normal 500 200px/195px Druk Wide Medium;
+    color: white;
 }
 
 .main__text{
     padding: 40px 0 40px 2px;
     font-weight: 350;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.main__text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s;
 }
 
 .main__btn{
     width: 197px;
     height: 53px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.main__btn._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s;
 }
 
 .main__social{
@@ -90,6 +153,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.main__social._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.6s;
 }
 
 .social{
@@ -111,6 +184,10 @@ body {
 
 .circle-instagram:hover{
     background: #A3389B;
+}
+
+.language{
+    display: none;
 }
  
 .language__btn{
@@ -138,22 +215,15 @@ body {
     justify-content: space-between;
 }
 
-.about__rotate{
-    display: flex;
-    align-items: center;
-    transform: rotate(-90deg) translateY(90px);
+.about__caption{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
 }
-
-.about__scroll{
-    font-size: 14px;
-    line-height: 16px;
-    color: #AAAAAA;
-}
-
-.about__border{
-    width: 113px;
-    border: 1px solid #AAAAAA;
-    margin-right: 30px;
+.about__caption._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s;
 }
 
 .about__holder{
@@ -163,16 +233,85 @@ body {
     align-items: flex-start;
 }
 
+.about__star{
+    animation: star 5s linear infinite;
+}
+
+@keyframes star {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .about__text{
     padding-top: 84px;
     font-weight: 350;
     font-size: 50px;
     line-height: 58px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
 }
 
+.about__text._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s;
+}
+
+.square-container{
+    position: relative;
+    z-index: -1;
+}
+
+.first-square{
+    position: absolute;
+    left: 452px;
+
+    transform: rotate(0deg);
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+}
+.firstsquare._active{
+    transform: rotate(0deg);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s;
+}
+.second-square{
+    position: absolute;
+    left: 492px;
+
+    transform: rotate(0deg);
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+}
+.second-square._active{
+    left: 688px;
+    transform: rotate(10deg);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s;
+}
+.third-square{
+    position: absolute;
+    left: 532px;
+
+    transform: rotate(0deg);
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+}
+.third-square._active{
+    left: 963px;
+    transform: rotate(20deg);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s;
+}
 .about__title{
-    background: url(img/three-pictures.png) no-repeat 50% 13%;
-    background-size: 60%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .title{
@@ -180,11 +319,57 @@ body {
     font-size: 200px;
     line-height: 232px;
 }
-.title:first-child{
-    padding: 121px 0 100px 112px;
+.title-one{
+    padding-left: 165px;
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
 }
-.title:nth-child(2){
-    padding: 0 0 77px 331px;
+.title-one._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s;
+}
+.title-two{
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.title-two._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s;
+}
+.title-three{
+    padding-left: 384px;
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.title-three._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s;
+}
+.title-four{
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.title-four._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s;
+}
+.title-five{
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.title-five._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s;
 }
 
 .title__bold{
@@ -741,7 +926,7 @@ body {
     .people__card{
         min-width: 230px;
     }
-    .to-share{s
+    .to-share{
         padding: 0 20px 100px;
     }
     .to-share__caption{
@@ -849,6 +1034,6 @@ body {
     .footer{
         padding-top: 0;
     }
-    }
+}
 
    
