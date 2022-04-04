@@ -491,7 +491,7 @@ body {
 
 .people__border-line{
     max-width: 408px;
-    border: 2px solid rgba(255, 255, 255, 0.5);;
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 0px 120px 0px 0px;
     /* animation: borderLine 5s cubic-bezier(0.19, 1, 0.22, 1) 1;
     animation-play-state: paused; */
@@ -506,24 +506,24 @@ body {
         border-radius: 0px 0px 0px 0px;
     }
     20% {
-        border-top: 2px solid #FFFFFF;
+        border-top: 2px solid rgba(255, 255, 255, 0.5);
         border-radius: 0px 120px 0px 0px;
     }
     40% {
-        border-right: 2px solid #FFFFFF;
+        border-right: 2px solid rgba(255, 255, 255, 0.5);
         border-radius: 0px 120px 0px 0px;
     }
     60% {
 
-        border-bottom: 2px solid #FFFFFF;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
         border-radius: 0px 120px 0px 0px;
     }
     80% {
-        border-left: 2px solid #FFFFFF;
+        border-left: 2px solid rgba(255, 255, 255, 0.5);
         border-radius: 0px 120px 0px 0px;
     }
     100% {
-        border: 2px solid #FFFFFF;
+        border: 2px solid rgba(255, 255, 255, 0.5);
         border-radius: 0px 120px 0px 0px;
     }
 
