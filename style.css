@@ -181,9 +181,17 @@ body {
 .circle-behance:hover {
     background: #1769FF;
 }
-
 .circle-instagram:hover{
     background: #A3389B;
+}
+.circle-telegram:hover{
+    background: #53B1F0;
+}
+.circle-github:hover{
+    background: #F06F53;
+}
+.circle-unsplash:hover{
+    background: #31AF1D;
 }
 
 .language{
@@ -377,23 +385,28 @@ body {
 }
 
 .people{
-    padding: 300px 60px 200px 180px;
+    padding: 300px 60px 200px;
+}
+
+.people__slider-box{
+    display: flex;
+    gap: 145px;
+    min-width: 0;
 }
 
 .people__wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 99px;
+    flex-direction: column;
+    row-gap: 489px;
+    max-width: 311px;
 }
 
 .people__nav{
     display: flex;
     align-items: center;
-}
-
-.nav__img{
-    padding-right: 70px;
+    gap: 85px;
 }
 
 .nav__inner{
@@ -406,30 +419,138 @@ body {
     left: 57.5px;
 }
 
-.people__count{
-    display: flex;
-    align-items: center;
+.rotate-center {
+	-webkit-animation: rotate-center 15s ease-in-out infinite both;
+	        animation: rotate-center 15s ease-in-out infinite both;
 }
 
-.count__text{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+}
+@keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
 }
 
-.people-row{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 140px;
-    padding-left: 400px;
+.people__caption{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 1s;
+}
+
+.people__caption._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.rotate-center{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 4s;
+}
+.rotate-center._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.nav__img{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 1s;
+}
+.nav__img._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.swiper-continer{
+    width: 100%;
+    height: 100%;
+}
+
+.people-card__slider{
+    overflow: hidden;
+}
+
+.swiper-slide{
+    max-width: 408px;
+}
+
+.people__border-line{
+    max-width: 408px;
+    border: 2px solid rgba(255, 255, 255, 0.5);;
+    border-radius: 0px 120px 0px 0px;
+    /* animation: borderLine 5s cubic-bezier(0.19, 1, 0.22, 1) 1;
+    animation-play-state: paused; */
+}
+
+/* .people__border-line._active {
+    animation-play-state: running;
+}
+@keyframes borderLine {
+    0% {
+        border: none;
+        border-radius: 0px 0px 0px 0px;
+    }
+    20% {
+        border-top: 2px solid #FFFFFF;
+        border-radius: 0px 120px 0px 0px;
+    }
+    40% {
+        border-right: 2px solid #FFFFFF;
+        border-radius: 0px 120px 0px 0px;
+    }
+    60% {
+
+        border-bottom: 2px solid #FFFFFF;
+        border-radius: 0px 120px 0px 0px;
+    }
+    80% {
+        border-left: 2px solid #FFFFFF;
+        border-radius: 0px 120px 0px 0px;
+    }
+    100% {
+        border: 2px solid #FFFFFF;
+        border-radius: 0px 120px 0px 0px;
+    }
+
+} */
+
+
+.border-line__second{
+    border-radius: 190px 190px 0px 0px;
+}
+
+.border-line__third{
+    border-radius: 0px 0px 120px 0px;
+}
+
+.border-line__four{
+    border-radius: 120px 0px 0px 0px;
+}
+
+.border-line__five{
+    border-radius: 0px 120px 0px 120px;
+}
+.border-line__six{
+    border-radius: 190px 190px 120px 0px;
 }
 
 .people__card{
-    max-width: 329px;
-}
-
-.people__card:nth-child(even){
-    padding-top: 89px;
+    padding: 43px 38px;
 }
 
 .people__name{
@@ -617,34 +738,6 @@ body {
     font-size: 14px;
     line-height: 16px;
 }
-
-
-.rotate-center {
-	-webkit-animation: rotate-center 15s ease-in-out infinite both;
-	        animation: rotate-center 15s ease-in-out infinite both;
-}
-
- @-webkit-keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
-  }
-  @keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
-  }
-  
 
 @media (max-width: 1600px) {
     body {
