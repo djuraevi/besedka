@@ -706,7 +706,7 @@ body {
   height: 53px;
 }
 
-/* @media (max-width: 1600px) {
+@media (max-width: 1600px) {
   body {
     max-width: 1600px;
   }
@@ -831,7 +831,7 @@ body {
     padding-top: 100px;
     padding-bottom: 50px;
   }
-} */
+}
 @media (max-width: 375px) {
   body {
     min-width: 375px;
