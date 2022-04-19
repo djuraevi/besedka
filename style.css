@@ -113,6 +113,7 @@ body {
   align-items: center;
   z-index: -1;
 }
+
 .logo__text {
   position: absolute;
   top: 0;
@@ -373,8 +374,8 @@ body {
 
 .inside-arrow {
   position: absolute;
-  top: 66.5px;
-  left: 57.5px;
+  top: 40%;
+  left: 30%;
 }
 
 .rotate-center {
@@ -609,8 +610,23 @@ body {
   max-width: 570px;
 }
 
+.list-work__box-img {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 80px 0px 100px;
+}
+
 .list-work {
   position: relative;
+}
+
+.list-work__img {
+  transition: 1s;
+  display: block;
+}
+
+.list-work__img:hover {
+  transform: scale(1.2);
 }
 
 .list-behance {
