@@ -1,0 +1,122 @@
+@media (min-width: 1920px) {
+  .center {
+    padding-left: calc(50% - 900px);
+    padding-right: calc(50% - 900px);
+  }
+  .main {
+    padding-top: 55px;
+    padding-bottom: 250px;
+    &__info {
+      padding-top: 91px;
+    }
+  }
+  .about {
+    &__holder {
+      padding-left: 170px;
+    }
+    &__text {
+      padding-top: 90px;
+      font-size: 50px;
+      line-height: 58px;
+    }
+    &__star {
+      width: 194px;
+      height: 202px;
+    }
+  }
+  .title {
+    font-weight: 300;
+    font-size: 180px;
+    line-height: 209px;
+  }
+  .people {
+    &__slider-box {
+      gap: 145px;
+    }
+  }
+  .navigation {
+    gap: 145px;
+    &__left {
+      position: relative;
+    }
+    &__rotate-center {
+      width: 100%;
+    }
+    &__box-arrow {
+      position: absolute;
+      top: 40%;
+      left: 30%;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+  .card__img {
+    width: 100%;
+  }
+  .people__card {
+    padding: 43px 38px;
+  }
+  .people__border-line {
+    width: 408px;
+  }
+  .people__name {
+    padding: 37px 0 25px;
+  }
+  .card__text {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  .card__text-post {
+    padding-top: 25px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .card__text-country {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .to-share {
+    &__card {
+      padding-top: 100px;
+    }
+  }
+  .card-people {
+    padding: 50px 50px 0;
+  }
+  .text-creator__name {
+    padding-top: 50px;
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .text-about {
+    padding-top: 40px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .text-about__work {
+    padding-top: 32px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .card-work__video {
+    width: 1244px;
+    padding: 50px 50px;
+  }
+  .items {
+    grid-template-columns: repeat(auto-fit, 570px);
+    gap: 60px 45px;
+    padding-top: 98px;
+  }
+  .creator-box {
+    padding-top: 45px;
+    gap: 20px;
+  }
+  .list-creator {
+    gap: 20px;
+  }
+  .text-concept {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}

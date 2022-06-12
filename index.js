@@ -36,6 +36,24 @@ if(animItems.length > 0) {
     }, 300)
 }
 
+const navigation = document.querySelector('.navigation');
+let arrowActive = document.querySelector('._active__arrow');
+let circleActive = document.querySelector('._active__circle');
 
+navigation.addEventListener('click', ({target}) => {
+    if (!target.closest('.arrow')) {
+        return;
+    }
+    const navContainer = target.closest('.navigation__container');
+    const arrowClick = navContainer.lastElementChild.firstElementChild;
+    const circleClick = navContainer.firstElementChild;
 
-  
+    circleActive.classList.remove("_active__circle", "_active");
+    arrowActive.classList.remove("_active__arrow");
+
+    circleClick.classList.add("_active__circle", "_active");
+    arrowClick.classList.add("_active__arrow");
+
+    circleActive = circleClick;
+    arrowActive = arrowClick;
+});
