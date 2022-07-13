@@ -10,6 +10,15 @@
       padding-top: 91px;
     }
   }
+  .logo {
+    &__text {
+      font-size: 199px;
+      line-height: 100%;
+    }
+    &__background-video {
+      min-height: 450px;
+    }
+  }
   .about {
     &__holder {
       padding-left: 170px;
@@ -22,6 +31,13 @@
     &__star {
       width: 194px;
       height: 202px;
+    }
+  }
+  .heading {
+    left: 6%;
+    &__title {
+      font-size: 180px;
+      line-height: 209px;
     }
   }
   .title {

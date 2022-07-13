@@ -689,6 +689,10 @@ a {
   position: relative;
 }
 
+.list__work:hover .list__img {
+  transform: scale(1.1);
+}
+
 .list__container {
   display: inline-block;
   overflow: hidden;
@@ -698,10 +702,6 @@ a {
 .list__img {
   transition: 1s;
   display: block;
-}
-
-.list__img:hover {
-  transform: scale(1.1);
 }
 
 .list__link {
@@ -975,6 +975,13 @@ a {
   .main__info {
     padding-top: 91px;
   }
+  .logo__text {
+    font-size: 199px;
+    line-height: 100%;
+  }
+  .logo__background-video {
+    min-height: 450px;
+  }
   .about__holder {
     padding-left: 170px;
   }
@@ -986,6 +993,13 @@ a {
   .about__star {
     width: 194px;
     height: 202px;
+  }
+  .heading {
+    left: 6%;
+  }
+  .heading__title {
+    font-size: 180px;
+    line-height: 209px;
   }
   .title {
     font-weight: 300;
