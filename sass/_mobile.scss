@@ -1,0 +1,122 @@
+@media (max-width: 425px) {
+  /* main */
+  .center {
+    padding-left: calc(50% - 171px);
+    padding-right: calc(50% - 171px);
+  }
+  .main {
+    padding-top: 43px;
+    padding-bottom: 120px;
+  }
+  .header__email {
+    display: none;
+  }
+  .main__social-bottom {
+    display: none;
+  }
+  .main__social-top {
+    display: block;
+  }
+  .main__info {
+    padding-top: 126px;
+  }
+  .main__text {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 40px 0;
+  }
+
+  /* about */
+
+  .about {
+    padding: 0 20px;
+  }
+  .about__holder {
+    padding: 0 0 80px;
+    flex-direction: column;
+  }
+  .about__text {
+    font-size: 22px;
+    line-height: 26px;
+    padding: 40px 0;
+  }
+  .about__star {
+    width: 60px;
+    align-self: flex-end;
+  }
+  .square__img {
+    width: 170px;
+  }
+  .first-square,
+  .second-square,
+  .third-square {
+    top: 50px;
+  }
+  .about__grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid__one {
+    align-self: flex-start;
+  }
+  .grid__two {
+    align-self: flex-end;
+  }
+  .grid__three {
+    align-self: center;
+  }
+  .grid__four {
+    align-self: flex-start;
+  }
+  .grid__five {
+    align-self: flex-end;
+  }
+
+  /* people */
+
+  .people__slider-box {
+    gap: 100px;
+  }
+
+  .people__card {
+    padding: 25px 20px;
+  }
+
+  .card__img {
+    width: 230px;
+  }
+
+  .card__text {
+    padding-top: 33px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .card__text-country {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  /* to share */
+
+  .card-people__wrapper {
+    width: 400px;
+  }
+  .card-people__img {
+    width: 100px;
+  }
+  .card-work__video {
+    width: 311px;
+  }
+  /* work-community */
+
+  .work-community__text {
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 45px;
+  }
+  .work-community__btn {
+    width: 335px;
+    height: 53px;
+  }
+}

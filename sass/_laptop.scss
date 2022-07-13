@@ -1,0 +1,141 @@
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 450px);
+    padding-right: calc(50% - 450px);
+  }
+  /* main */
+  .main {
+    padding-top: 40px;
+    padding-bottom: 200px;
+  }
+  .logo {
+    &__text {
+      font-size: 100px;
+      line-height: 120px;
+    }
+  }
+
+  /* about */
+
+  .about {
+    padding: 0 40px;
+  }
+
+  .about__holder {
+    justify-content: space-around;
+    padding: 0 0 60px;
+  }
+
+  .about__star {
+    width: 130px;
+  }
+
+  .about__text {
+    padding-top: 40px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .square__img {
+    width: 270px;
+  }
+
+  /* people */
+
+  .people {
+    padding: 100px 20px 150px;
+  }
+
+  .people__slider-box {
+    gap: 60px;
+  }
+  /* to share */
+  .to-share {
+    padding: 20px 20px 100px;
+  }
+  .to-share__text {
+    padding-bottom: 29px;
+  }
+  .to-share__card {
+    padding-top: 0;
+    flex-direction: column-reverse;
+    border: 2px solid #808480;
+    border-radius: 0px 0px 60px 0px;
+  }
+  .card-people {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    padding: 16px 16px 50px;
+    border-top: 2px solid #808480;
+  }
+  .card-people__wrapper {
+    width: 400px;
+  }
+  .card-people__img {
+    width: 268px;
+  }
+  .text-creator__name {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .text-about {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .text-about__work {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .text-about__work br {
+    display: none;
+  }
+  .card-work {
+    border: none;
+  }
+  .card-work__video {
+    width: 100%;
+    padding: 16px;
+  }
+  /* work-community */
+
+  .work-community {
+    padding: 0 20px 100px;
+  }
+
+  .wrap {
+    padding: 60px 0 120px;
+  }
+
+  .items {
+    gap: 40px;
+  }
+
+  .list {
+    width: 335px;
+  }
+
+  .list-work__img {
+    width: 335px;
+  }
+
+  .creator-box {
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+  .creator-img img {
+    width: 51px;
+  }
+
+  .text-concept {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .text-creator-name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

@@ -33,9 +33,15 @@
     &__slider-box {
       gap: 145px;
     }
+    &__wrapper {
+      max-width: 311pxpx;
+    }
+    &__caption {
+      align-self: flex-start;
+    }
   }
   .navigation {
-    gap: 145px;
+    gap: 85px;
     &__left {
       position: relative;
     }

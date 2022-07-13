@@ -36,9 +36,12 @@ if(animItems.length > 0) {
     }, 300)
 }
 
+// переключение слайдера
+
 const navigation = document.querySelector('.navigation');
 let arrowActive = document.querySelector('._active__arrow');
 let circleActive = document.querySelector('._active__circle');
+
 
 navigation.addEventListener('click', ({target}) => {
     if (!target.closest('.arrow')) {
@@ -48,12 +51,31 @@ navigation.addEventListener('click', ({target}) => {
     const arrowClick = navContainer.lastElementChild.firstElementChild;
     const circleClick = navContainer.firstElementChild;
 
-    circleActive.classList.remove("_active__circle", "_active");
+    circleActive.classList.remove("_active__circle", "_life", "_active");
     arrowActive.classList.remove("_active__arrow");
 
-    circleClick.classList.add("_active__circle", "_active");
+    circleClick.classList.add("_active__circle", "_life");
     arrowClick.classList.add("_active__arrow");
 
     circleActive = circleClick;
     arrowActive = arrowClick;
 });
+
+// modal window
+
+// const modalWindow = document.querySelector('.modal');
+
+// document.querySelector('footer').addEventListener('click', ({target}) => {
+//     if (!target.classList.contains('footer__btn')) {
+//         return;
+//     }
+//     modalWindow.style.display = 'block';
+// });
+
+// document.querySelector('.modal').addEventListener('click', ({target}) => {
+//     if (!target.classList.contains('modal__close')) {
+//         return;
+//     }
+//     console.log(target);
+//     modalWindow.style.display = 'none';
+// });
